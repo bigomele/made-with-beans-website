@@ -49,9 +49,9 @@ function initBurgerMenu() {
     }
   });
 
-  // Mark active page link
+  // Mark active page link (mobile menu + desktop nav)
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  menuPanel.querySelectorAll('a').forEach(link => {
+  document.querySelectorAll('.menu-list a, .desktop-nav a').forEach(link => {
     const linkPage = link.getAttribute('href');
     if (linkPage === currentPage) {
       link.classList.add('is-active');

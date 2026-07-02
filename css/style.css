@@ -164,6 +164,29 @@ h1, h2, h3, h4 {
   white-space: nowrap;
 }
 
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav a {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--coffee);
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a:focus-visible {
+  color: var(--terracotta);
+}
+
+.desktop-nav a.is-active {
+  color: var(--terracotta);
+  border-bottom-color: var(--terracotta);
+}
+
 .burger-btn {
   display: flex;
   flex-direction: column;
@@ -1001,4 +1024,218 @@ h1, h2, h3, h4 {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (≥700px)
+   ============================================ */
+
+@media (min-width: 700px) {
+
+  .site-wrapper {
+    max-width: 700px;
+  }
+
+  .site-header {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .hero {
+    height: 340px;
+  }
+
+  .featured-frame {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    padding: var(--space-sm) var(--space-lg) var(--space-xl);
+  }
+
+  .steps {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-lg);
+  }
+
+  .step {
+    max-width: 220px;
+    text-align: center;
+  }
+
+  .contact-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-photo {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .about-block p {
+    max-width: 460px;
+  }
+
+  .commission-hero-frame {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .commission-form-section {
+    max-width: 560px;
+    margin: 0 auto;
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+
+  .commissions-section,
+  .contact-section {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+}
+
+/* ============================================
+   RESPONSIVE — DESKTOP (≥1024px)
+   ============================================ */
+
+@media (min-width: 1024px) {
+
+  body {
+    background: var(--cream-deep);
+  }
+
+  .site-wrapper {
+    max-width: 1080px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .site-header {
+    padding: var(--space-md) var(--space-xl);
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+  }
+
+  .burger-btn,
+  .menu-panel,
+  .menu-overlay,
+  .back-btn {
+    display: none;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    height: 460px;
+  }
+
+  .featured {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    padding: var(--space-xl);
+    text-align: left;
+  }
+
+  .featured-frame {
+    flex: 0 0 360px;
+    max-width: 360px;
+    margin: 0;
+  }
+
+  .featured h2 {
+    font-size: 2.4rem;
+  }
+
+  .link-cta {
+    font-size: 1.15rem;
+  }
+
+  .page-title-bar {
+    padding: var(--space-xl) var(--space-xl) var(--space-md);
+  }
+
+  .page-title-bar h1 {
+    font-size: 2.6rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    padding: var(--space-sm) var(--space-xl) var(--space-xl);
+  }
+
+  .gallery-card .art-frame:hover img {
+    transform: scale(1.06);
+  }
+
+  .commissions-section,
+  .contact-section {
+    padding: var(--space-xl);
+  }
+
+  .commissions-section h2,
+  .contact-section h2 {
+    font-size: 2.4rem;
+  }
+
+  .steps {
+    gap: var(--space-xl);
+  }
+
+  .step {
+    max-width: 240px;
+  }
+
+  .about-photo {
+    max-width: 640px;
+  }
+
+  .about-block p {
+    max-width: 520px;
+    font-size: 1.15rem;
+  }
+
+  .commission-hero {
+    padding: var(--space-xl) var(--space-xl) 0;
+  }
+
+  .commission-hero-frame {
+    max-width: 480px;
+  }
+
+  .commission-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .commission-form-section {
+    max-width: 620px;
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+
+  .modal-overlay {
+    align-items: center;
+  }
+
+  .art-modal {
+    max-width: 640px;
+    max-height: 85vh;
+    border-radius: var(--radius-md);
+  }
+
+  .modal-drag-handle {
+    display: none;
+  }
 }
