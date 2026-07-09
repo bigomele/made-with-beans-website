@@ -9,56 +9,290 @@ const ARTWORKS = [
   {
     id: "coffee-morning",
     title: "Morning Coffee",
-    medium: "Coffee on water paper",
-    dims: "25x40cm",
+    medium: "Coffee on paper",
+    dims: "21x29cm",
     image: "images/art-coffee-morning.jpg",
     availability: "available",
-    description: "A quiet still life of a coffee cup and saucer, brewed entirely in shades of coffee on watercolor paper."
+    description: ""
   },
   {
     id: "bonneh",
-    title: "Bunny",
-    medium: "Coffee on water paper",
-    dims: "25x40cm",
+    title: "Bunny Beans",
+    medium: "Coffee on paper",
+    dims: "14.7x21cm",
     image: "images/art-bunny.jpg",
     availability: "available",
-    description: "A soft-eyed rabbit rendered in warm coffee tones, sitting low in a bed of grass."
-  },
-  {
-    id: "more-bunneh",
-    title: "Owl Love",
-    medium: "Coffee on water paper",
-    dims: "25x40cm",
-    image: "images/art-more-bunneh.jpg",
-    availability: "prints-only",
-    description: "A portrait piece exploring light and shadow with layered coffee washes — the original has found a home, but prints are available."
+    description: ""
   },
   {
     id: "koi-innit",
-    title: "Koi",
-    medium: "Coffee on water paper",
-    dims: "25x40cm",
+    title: "Koi Mil Gaya",
+    medium: "Coffee on cotton sheet",
+    dims: "15x42cm",
     image: "images/art-koi.jpg",
     availability: "available",
-    description: "A tall, narrow study of koi fish swimming in looping coffee-stained currents."
+    description: ""
   },
   {
     id: "coffee-and-ash",
-    title: "Coffee and Ash",
-    medium: "Coffee on water paper",
-    dims: "25x40cm",
+    title: "Vatang: Coffee and Fire",
+    medium: "Coffee on paper",
+    dims: "20x29cm",
     image: "images/art-coffee-ash.jpg",
     availability: "available",
-    description: "A striking portrait built from deep, smoky coffee tones layered into fine detail."
+    description: ""
   },
   {
     id: "stranger-kinks",
-    title: "Stranger Things",
-    medium: "Coffee on water paper",
-    dims: "25x40cm",
+    title: "El vs Vecna (Stranger Things)",
+    medium: "Coffee on paper",
+    dims: "21x29cm",
     image: "images/art-stranger-kinks.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "sunflower-girl",
+    title: "Sunflower Girl",
+    medium: "Coffee on paper",
+    dims: "29.6x42cm",
+    image: "images/art-sunflower-girl.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "rakshaBandhan",
+    title: "Raksha Bandhan",
+    medium: "Coffee on paper",
+    dims: "14.7x10.5cm",
+    image: "images/art-raksha-bandhan.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "peacockKalamkari",
+    title: "Peacock Kalamkari",
+    medium: "Coffee on cotton sheet",
+    dims: "29.7x42cm",
+    image: "images/art-peacock-kalamkari.JPG",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "elephantKalamkari",
+    title: "Kalamkari Elephants",
+    medium: "Coffee on cotton sheet",
+    dims: "21x14.7cm",
+    image: "images/art-elephant-kalamkari.jpg",
+    availability: "prints-only",
+    description: ""
+  },
+  {
+    id: "sumieBamboos",
+    title: "Sumi-e Bamboos",
+    medium: "Coffee on cotton sheet",
+    dims: "14x42cm",
+    image: "images/art-Sumi-e Bamboos.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "girlWithCapp",
+    title: "Girl With Cappuccino",
+    medium: "Coffee on paper",
+    dims: "10.5x14.7cm",
+    image: "images/art-girlWithCapp.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "mokaLisa",
+    title: "Moka Lisa",
+    medium: "Coffee on paper",
+    dims: "10.5x14.7cm",
+    image: "images/art-mokaLisa.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "tuscany",
+    title: "Tuscany",
+    medium: "Coffee on paper",
+    dims: "8.5x10.3cm",
+    image: "images/art-tuscany.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "butFirstCoffee",
+    title: "But First Coffee",
+    medium: "Coffee on paper",
+    dims: "10.5x14.7cm",
+    image: "images/art-butFirstCoffee.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "kissMyAss",
+    title: "Kiss My Ass",
+    medium: "Coffee on paper",
+    dims: "10.5x14.7cm",
+    image: "images/art-kissMyAss.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "coffeeFriends",
+    title: "C•O•F•F•E•E (Friends)",
+    medium: "Coffee on paper",
+    dims: "14.7x10cm",
+    image: "images/art-coffeeFriends.jpg",
+    availability: "prints-only",
+    description: ""
+  },
+  {
+    id: "hugInAMug",
+    title: "Hug In A Mug",
+    medium: "Coffee on paper",
+    dims: "12.7x18cm",
+    image: "images/art-hugInAMug.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "bearyChristmas",
+    title: "Beary Christmas",
+    medium: "Coffee on paper",
+    dims: "9.4x9.4cm",
+    image: "images/art-bearyChristmas.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "labubu",
+    title: "Labubu",
+    medium: "Coffee on paper",
+    dims: "10.5x14.7cm",
+    image: "images/art-labubu.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "espressoYourself",
+    title: "Espresso Yourself",
+    medium: "Coffee on paper",
+    dims: "10.5x14.7cm",
+    image: "images/art-espressoYourself.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "door",
+    title: "Door",
+    medium: "Coffee on paper",
+    dims: "12.5x19.7cm",
+    image: "images/art-door.jpg",
+    availability: "prints-only",
+    description: ""
+  },
+  {
+    id: "nyaCafe",
+    title: "Nya Kafe",
+    medium: "Coffee on paper",
+    dims: "14.7x19.7cm",
+    image: "images/art-nyaKafe.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "cottage",
+    title: "Cottage",
+    medium: "Coffee on paper",
+    dims: "14.7x19.7cm",
+    image: "images/art-cottage.jpg",
     availability: "sold",
-    description: "A fan-art tribute piece, fully rendered in coffee. The original has been sold, but prints may be available on request."
+    description: ""
+  },
+  {
+    id: "inktoberByCats",
+    title: "Inktober by Cats (2025)",
+    medium: "Coffee on paper",
+    dims: "29.7x42cm",
+    image: "images/art-inktoberByCats.jpg",
+    availability: "prints-only",
+    description: ""
+  },
+  {
+    id: "sireneEXP",
+    title: "Sirène (Expedition 33)",
+    medium: "Coffee on paper, red watercolor",
+    dims: "21x29cm",
+    image: "images/art-sireneEXP.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "koalaTea",
+    title: "Koala Tea",
+    medium: "Black Tea and Coffee on paper",
+    dims: "10.5x14.7cm",
+    image: "images/art-koalaTea.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "punchWithPlushie",
+    title: "Punch With Plushie",
+    medium: "Coffee on paper",
+    dims: "14.8x21cm",
+    image: "images/art-punchWithPlushie.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "punchWithPlushie02",
+    title: "Punch With Plushie",
+    medium: "Coffee on paper",
+    dims: "14.8x21cm",
+    image: "images/art-punchWithPlushie02.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "tajMahal",
+    title: "Taj Mahal",
+    medium: "Coffee on paper",
+    dims: "12.8x17.8cm",
+    image: "images/art-tajMahal.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "otterSpace",
+    title: "Otter Space",
+    medium: "Coffee on paper",
+    dims: "12.6x17.8cm",
+    image: "images/art-otterSpace.jpg",
+    availability: "available",
+    description: ""
+  },
+  {
+    id: "sundayCoffee",
+    title: "Sunday Coffee",
+    medium: "Coffee on paper",
+    dims: "20x29cm",
+    image: "images/art-sundayCoffee.jpg",
+    availability: "prints-only",
+    description: ""
+  },
+  {
+    id: "couple",
+    title: "Couple",
+    medium: "Coffee on paper",
+    dims: "10x10cm",
+    image: "images/art-couple.jpg",
+    availability: "prints-only",
+    description: ""
   }
 ];
 

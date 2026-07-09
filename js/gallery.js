@@ -23,10 +23,7 @@ function renderGalleryGrid() {
         <div class="card-info">
           <div>
             <h3>${art.title}</h3>
-            <p class="medium">${art.medium}</p>
-            <p class="dims">${art.dims}</p>
           </div>
-          <button class="get-btn" data-art-id="${art.id}">Get</button>
         </div>
       </article>
     `;

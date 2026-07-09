@@ -5,7 +5,7 @@
 
 :root {
   /* Colors — drawn from the Figma design */
-  --cream: #FDF6EC;        /* main background */
+  --cream: #fcfcfc;        /* main background */
   --cream-deep: #F5E9D8;   /* section background (commissions block) */
   --coffee-dark: #2B1B12;  /* darkest brown — hero overlay, text on light */
   --coffee: #6B4226;       /* primary brown — headings, nav text */
@@ -17,8 +17,8 @@
   --white: #FFFFFF;
 
   /* Type */
-  --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
-  --font-body: 'Quicksand', 'Nunito Sans', sans-serif;
+  --font-display: 'Fraunces', 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Sans 3', 'Nunito Sans', sans-serif;
 
   /* Spacing scale */
   --space-xs: 0.5rem;
@@ -144,7 +144,7 @@ h1, h2, h3, h4 {
 }
 
 .logo-mark {
-    width: 28px;      /* Change to your preferred size */
+    width: 230px;      /* Change to your preferred size */
     height: 28px;
     display: flex;
     align-items: center;
@@ -152,7 +152,7 @@ h1, h2, h3, h4 {
 }
 
 .logo-mark svg {
-  width: 18px;
+  width: 50px;
   height: 18px;
 }
 
@@ -203,7 +203,7 @@ h1, h2, h3, h4 {
   width: 22px;
   height: 2px;
   background: var(--coffee);
-  border-radius: 2px;
+  border-radius: 0px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -334,7 +334,7 @@ h1, h2, h3, h4 {
 
 .featured-frame {
   position: relative;
-  border-radius: var(--radius-sm);
+  border-radius: 0;
   overflow: hidden;
   box-shadow: var(--shadow-card);
   background: var(--coffee-dark);
@@ -542,7 +542,7 @@ h1, h2, h3, h4 {
 
 .gallery-card .art-frame {
   position: relative;
-  border-radius: var(--radius-sm);
+  border-radius: 0;
   overflow: hidden;
   background: var(--coffee-dark);
   box-shadow: var(--shadow-soft);
@@ -559,20 +559,6 @@ h1, h2, h3, h4 {
 .gallery-card .art-frame:hover img,
 .gallery-card .art-frame:focus-visible img {
   transform: scale(1.04);
-}
-
-.sold-badge {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: var(--coffee-dark);
-  color: var(--cream);
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 4px 8px;
-  border-radius: var(--radius-sm);
 }
 
 .gallery-card .card-info {
@@ -800,7 +786,7 @@ h1, h2, h3, h4 {
 }
 
 .commission-hero-frame {
-  border-radius: var(--radius-md);
+  border-radius: 0;
   overflow: hidden;
   box-shadow: var(--shadow-card);
   background: var(--coffee-dark);
