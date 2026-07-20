@@ -780,9 +780,13 @@ h1, h2, h3, h4 {
 /* ============================================
    COMMISSIONS PAGE — hero image + form
    ============================================ */
+.full-bleed {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
 
 .commission-hero {
-  padding: var(--space-lg) var(--space-md) 0;
+  padding: var(--space-lg) 0 0;
 }
 
 .commission-hero-frame {
@@ -792,14 +796,29 @@ h1, h2, h3, h4 {
   background: var(--coffee-dark);
 }
 
-.commission-hero-frame img {
-  width: 100%;
-  aspect-ratio: 5/7;
-  object-fit: cover;
+.conveyor {
+    width: 100%;
+    overflow: hidden;
+}
 
-  /* Fade animation */
-  opacity: 1;
-  transition: opacity 0.6s ease-in-out;
+.conveyor-track {
+  display: flex;
+  gap: var(--space-sm);
+  width: max-content;
+  animation: conveyor-scroll 40s linear infinite;
+}
+
+.conveyor-track img {
+  width: 420px;
+  height: 608px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 0;
+}
+
+@keyframes conveyor-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 .commission-hero h1 {
@@ -1100,7 +1119,7 @@ h1, h2, h3, h4 {
   }
 
   .site-wrapper {
-    max-width: 1080px;
+    max-width: 1680px;
     box-shadow: var(--shadow-card);
   }
 
@@ -1202,7 +1221,7 @@ h1, h2, h3, h4 {
   }
 
   .commission-hero-frame {
-    max-width: 480px;
+    max-width: 1680px;
   }
 
   .commission-hero h1 {

@@ -5,7 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initFeaturedCarousel();
-  initCommissionCarousel();
+  initCommissionConveyor();
   initBurgerMenu();
   initScrollReveal();
 });
@@ -62,82 +62,45 @@ function initBurgerMenu() {
 
 
 function initFeaturedCarousel() {
-
   if (typeof ARTWORKS === "undefined") return;
 
   const image = document.getElementById("featuredImage");
-  const title = document.getElementById("featuredTitle");
-  const medium = document.getElementById("featuredMedium");
-  const dims = document.getElementById("featuredDims");
-
   if (!image) return;
 
   let current = 0;
 
   function showArtwork(index) {
-
     const art = ARTWORKS[index];
+    const preload = new Image();
+    preload.src = art.image;
 
-    image.style.opacity = 0;
-
-    setTimeout(() => {
-
-      console.log(art);
-      console.log(art.image);
-      image.src = art.image;
-      image.alt = art.title;
-
-
-      image.style.opacity = 1;
-
-    }, 500);
+    preload.onload = () => {
+      image.style.opacity = 0;
+      setTimeout(() => {
+        image.src = art.image;
+        image.alt = art.title;
+        image.style.opacity = 1;
+      }, 500);
+    };
   }
 
-  showArtwork(current);
-
   setInterval(() => {
-
     current = (current + 1) % ARTWORKS.length;
-
     showArtwork(current);
-
   }, 5000);
-
 }
 
-
-function initCommissionCarousel() {
-
+function initCommissionConveyor() {
   if (typeof COMMISSION_IMAGES === "undefined") return;
 
-  const image = document.getElementById("commissionCarouselImage");
-  if (!image) return;
+  const track = document.getElementById("conveyorTrack");
+  if (!track) return;
 
-  let current = 0;
+  const slides = COMMISSION_IMAGES.map(image =>
+    `<img src="${image}" alt="Commission artwork">`
+  ).join("");
 
-  function showImage(index) {
-
-    image.style.opacity = 0;
-
-    setTimeout(() => {
-
-      image.src = COMMISSION_IMAGES[index];
-
-      image.style.opacity = 1;
-
-    }, 500);
-  }
-
-  showImage(current);
-
-  setInterval(() => {
-
-    current = (current + 1) % COMMISSION_IMAGES.length;
-
-    showImage(current);
-
-  }, 4000);
-
+  track.innerHTML = slides + slides;
 }
 
 
