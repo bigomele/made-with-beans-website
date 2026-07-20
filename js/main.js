@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initFeaturedCarousel();
+  initCommissionCarousel();
   initBurgerMenu();
   initScrollReveal();
 });
@@ -101,6 +102,41 @@ function initFeaturedCarousel() {
     showArtwork(current);
 
   }, 5000);
+
+}
+
+
+function initCommissionCarousel() {
+
+  if (typeof COMMISSION_IMAGES === "undefined") return;
+
+  const image = document.getElementById("commissionCarouselImage");
+  if (!image) return;
+
+  let current = 0;
+
+  function showImage(index) {
+
+    image.style.opacity = 0;
+
+    setTimeout(() => {
+
+      image.src = COMMISSION_IMAGES[index];
+
+      image.style.opacity = 1;
+
+    }, 500);
+  }
+
+  showImage(current);
+
+  setInterval(() => {
+
+    current = (current + 1) % COMMISSION_IMAGES.length;
+
+    showImage(current);
+
+  }, 4000);
 
 }
 
